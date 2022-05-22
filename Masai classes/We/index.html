@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #heading > h1 {
+        margin: 1% 32% 1% 32%;
+        text-align: center;
+        font-size: 42px;
+      }
+      #heading > p {
+        margin: 0% 30% 5% 32%;
+        text-align: center;
+        font-size: 19px;
+        color: #8d8d8d;
+      }
+      .borobag {
+        width: 70%;
+        /* border: 1px solid red; */
+        margin: auto;
+        display: flex;
+      }
+      .borobag > div {
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        margin: auto;
+        border-radius: 25px;
+      }
+      .borobag h2 {
+        text-align: center;
+        margin-top: 32px;
+      }
+      .borobag h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .borobag h1 + p {
+        text-align: center;
+        font-style: italic;
+        font-size: 15px;
+        margin-top: 1%;
+      }
+      .borobag :nth-child(4) {
+        text-align: center;
+        font-size: 19px;
+        margin: 7% 12% 10% 12%;
+      }
+      .borobag button {
+        margin: 12% 17% 10% 19%;
+        border-radius: 9px;
+        border: 1px solid blue;
+        padding: 5% 12% 5% 12%;
+        background-color: white;
+        font-size: 23px;
+        font-weight: bold;
+        color: blue;
+      }
+      .borobag > :nth-child(1) > h1 {
+        color: #007e01;
+      }
+      .borobag > :nth-child(2) > h1 {
+        color: #fea000;
+      }
+      .borobag > :nth-child(3) > h1 {
+        color: #2929b4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <div class="borobag">
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>$39.00</h1>
+        <p>Per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>$59.00</h1>
+        <p>Per month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+    </div>
+
+    <!-- Cards section -->
+    <div id="cards-section">
+      <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+    </div>
+  </body>
+</html>

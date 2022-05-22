@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .main {
+        width: 70%;
+        margin: auto;
+        border: 1px solid red;
+        /* display: flex; */
+      }
+      .main > div {
+        /* border: 1px solid black; */
+        width: 100%;
+        display: flex;
+      }
+      .main > div > div {
+        width: 35px;
+        height: 35px;
+        margin: auto;
+        border: 2px solid rgb(0, 0, 0);
+        margin-bottom: 10px;
+      }
+      .main > div > :nth-child(4) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(5) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(6) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(7) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(8) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(9) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(10) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(11) {
+        background-color: blue;
+      }
+      .main > div > :nth-child(12) {
+        background-color: blue;
+      }
+      .main > :nth-child(2) > :nth-child(3) {
+        border: 5px solid rgb(255, 255, 255);
+        width: 32px;
+        height: 32px;
+        background: #ffffff;
+      }
+      .main > :nth-child(1) > :nth-child(3) {
+        border: 5px solid rgb(255, 255, 255);
+        width: 32px;
+        height: 32px;
+        background: #ffffff;
+      }
+      /* bold border with pink */
+      .main > :nth-child(3) > :nth-child(3) {
+        border: 5px solid black;
+        width: 32px;
+        height: 32px;
+        background: #ffe6d5;
+      }
+      .main > :nth-child(4) > :nth-child(3) {
+        border: 5px solid black;
+        width: 32px;
+        height: 32px;
+        background: #ffe6d5;
+      }
+      .main > :nth-child(3) > :nth-child(2) {
+        background: #ff5555;
+      }
+      .main > :nth-child(4) > :nth-child(2) {
+        background: #ff5555;
+      }
+      .main > :nth-child(2) > :nth-child(2) {
+        background: #ff5555;
+      }
+      .main > :nth-child(1) > :nth-child(2) {
+        background: #ff5555;
+      }
+      .main > :nth-child(1) > :nth-child(1) {
+        background: #89a02c;
+      }
+      .main > :nth-child(2) > :nth-child(1) {
+        background: #89a02c;
+      }
+      .main > :nth-child(3) > :nth-child(1) {
+        background: #89a02c;
+      }
+      .main > :nth-child(4) > :nth-child(1) {
+        background: #89a02c;
+      }
+      .main > :nth-child(1) > :nth-child(13) {
+        background: #ed5e10;
+      }
+      .main > :nth-child(1) > :nth-child(14) {
+        background: #c012fa;
+      }
+      .main > :nth-child(1) > :nth-child(15) {
+        background: #c012fa;
+      }
+      .main > :nth-child(1) > :nth-child(16) {
+        background: #89a02c;
+      }
+      .main > :nth-child(1) > :nth-child(17) {
+        background: red;
+      }
+      .main > :nth-child(1) > :nth-child(18) {
+        background: yellow;
+      }
+      .main > :nth-child(2) > :nth-child(13) {
+        background: #ed5e10;
+      }
+      .main > :nth-child(2) > :nth-child(14) {
+        background: #ed5e10;
+      }
+      .main > :nth-child(2) > :nth-child(15) {
+        background: #c012fa;
+      }
+      .main > :nth-child(2) > :nth-child(16) {
+        background: #c012fa;
+      }
+      .main > :nth-child(2) > :nth-child(17) {
+        background: #e01010;
+      }
+      .main > :nth-child(2) > :nth-child(18) {
+        background: #dff30a;
+      }
+      .main > :nth-child(3) > :nth-child(13) {
+        background: #ed5e10;
+      }
+      .main > :nth-child(3) > :nth-child(14) {
+        background: #ed5e10;
+      }
+      .main > :nth-child(3) > :nth-child(15) {
+        background: #ed5e10;
+      }
+      .main > :nth-child(3) > :nth-child(16) {
+        background: #c012fa;
+      }
+      .main > :nth-child(3) > :nth-child(17) {
+        background: #e01010;
+      }
+      .main > :nth-child(3) > :nth-child(18) {
+        background: #f3ff08;
+      }
+      .main > :nth-child(4) > :nth-child(13) {
+        background: #6d535e;
+      }
+      .main > :nth-child(4) > :nth-child(14) {
+        background: #6d535e;
+      }
+      .main > :nth-child(4) > :nth-child(15) {
+        background: #6d535e;
+      }
+      .main > :nth-child(4) > :nth-child(16) {
+        background: #6d535e;
+      }
+      .main > :nth-child(4) > :nth-child(17) {
+        background: #6d535e;
+      }
+      .main > :nth-child(4) > :nth-child(18) {
+        background: #6d535e;
+      }
+
+      /* contant inside div */
+      .main > :nth-child(4) > :nth-child(2) > p {
+        text-align: center;
+        margin: 28% 27%;
+      }
+      .main > :nth-child(3) > :nth-child(2) > p {
+        text-align: center;
+        margin: 28% 27%;
+      }
+      .main > :nth-child(2) > :nth-child(2) > p {
+        text-align: center;
+        margin: 28% 27%;
+      }
+      .main > :nth-child(1) > :nth-child(2) > p {
+        text-align: center;
+        margin: 28% 27%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- 1st row -->
+      <div>
+        <div></div>
+        <div><p>20</p></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- 2nd row -->
+      <div>
+        <div></div>
+        <div><p>38</p></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- 3rd row -->
+      <div>
+        <div></div>
+        <div><p>56</p></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!-- 4th row -->
+      <div>
+        <div></div>
+        <div><p>88</p></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
